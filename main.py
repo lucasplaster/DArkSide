@@ -1,0 +1,67 @@
+from py_typewriter import write, blink, fade_text, scroll_text, loading, color_text
+import time
+
+def main():
+    write("♪ ♫ ♬", 12.84)
+    write("Sinking under", 2.67)
+    write("Think my angel's fallen", 2.93)
+    write("Safe place plundered", 2.65)
+    write("Bastards kicked the doors in", 2.69)
+    write("Picked the stitches, now I can't stop bleeding", 2.95)
+    write("Three in the morning, I ain't slept all weekend", 2.63)
+    write("Six feet in the dirt, still breathing", 2.7)
+    blink("Don't give a fuck if my heart stops beating", duracao=2.95, intervalo=0.3)
+    write("Hey, I'm begging you to stay".upper(), 3.98)
+    color_text("My dark side won today".upper(), "red")
+    time.sleep(2.90)
+    write("My heart keeps breaking", 1.6)
+    scroll_text("Over     and     over", duracao=2.95, largura=13)
+    write("Hey, don't let me out your sight", 4.3)
+    write("Can't trust myself tonight", 3)
+    blink("My heart keeps breaking".upper(), duracao=1.7, intervalo=0.3)
+    scroll_text("Can you talk me off the ledge again?", duracao=4.2, largura=35)
+    write("Something haunts me",2.8)
+    write("Footsteps in the basement", 2.85)
+    write("Out of body", 2.99)
+    write("But there's no escaping", 2.65)
+    write("I picked the stitches, now I can't stop bleeding", 2.93)
+    write("Three in the morning, I ain't slept all weekend", 2.92)
+    write("Six feet in the dirt, still breathing", 2.38)
+    blink("Don't give a fuck if my heart stops beating", duracao=2.94, intervalo=0.3)
+    write("Hey, I'm begging you to stay".upper(), 3.98)
+    color_text("My dark side won today".upper(), "red")
+    time.sleep(2.87)
+    write("My heart keeps breaking", 1.62)
+    scroll_text("Over     and     over", duracao=3.1, largura=13)
+    write("Hey, don't let me out your sight", 3.99)
+    write("Can't trust myself tonight", 2.66)
+    write("My heart keeps breaking", 1.85)
+    write("Can you talk me off the ledge again?", 3.24)
+    write("Something's in the way", 2.38)
+    write("Don't know what I can say", 2.67)
+    write("Memories are haunting me", 3.21)
+    blink("A sickness taking over".upper(), duracao=2.64)
+    write("So bury me alive", 2.93)
+    write("There's nowhere left to hide", 2.93)
+    write("And say goodbye 'cause maybe I", 2.91)
+    fade_text("Maybe I won't miss me when I'm gone".upper(), duracao=5.7)
+    write("Hey, I'm begging you to stay", 3.96)
+    write("My dark side won today", 2.95)
+    write("My heart keeps breaking",1.59)
+    scroll_text("Over     and     over", duracao=3.19, largura=13)
+    write("Hey, don't let me out your sight", 3.98)
+    write("Can't trust myself tonight", 2.69)
+    write("My heart keeps breaking", 1.85)
+    write("Can you talk me off the ledge again?", 3.1)
+    blink("Can't trust myself tonight", duracao=6.64, intervalo=0.5)
+    write("Can't trust myself", 1.6)
+    write("Can you talk me off the ledge again?", 4)
+
+
+
+    print("<<==>>")
+
+
+
+if __name__ == "__main__":
+    main();
