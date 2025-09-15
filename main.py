@@ -1,6 +1,16 @@
 from py_typewriter import write, blink, fade_text, scroll_text, loading, color_text
 import time
 
+
+"""
+
+É nescessario o do modulo : https://github.com/lucasplaster/py-typewriter
+Basta apenas extrair a pasta no mesmo diretorio desse arquivo.
+
+"""
+
+
+
 def main():
     write("♪ ♫ ♬", 12.84)
     write("Sinking under", 2.67)
