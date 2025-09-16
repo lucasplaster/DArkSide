@@ -1,19 +1,34 @@
 from py_typewriter import write, blink, fade_text, scroll_text, loading, color_text
 import time
-import pygame
+import argparse
 
 """
 
-É nescessario o do modulo : https://github.com/lucasplaster/py-typewriter
+Você vai precisar do pygame instalado para rodar com musica, caso não queira
+musica é so usar -music off, caso queira com musica -music on. O padrão é sem musica.
+É nescessario o modulo : https://github.com/lucasplaster/py-typewriter
 Basta apenas extrair a pasta no mesmo diretorio desse arquivo.
 
 """
 
 def main():
 
-    pygame.mixer.init()
-    pygame.mixer.music.load("darkside.mp3")
-    pygame.mixer.music.play()
+    parser = argparse.ArgumentParser(description="Controle de som do script.")
+    parser.add_argument(
+        "--music",
+        choices=["on", "off"],
+        default = "off",
+        help="Ativa ou desativa o som na execução do script."
+    )
+
+    args = parser.parse_args()
+
+    if args.music == "on":
+        import pygame
+        pygame.mixer.init()
+        pygame.mixer.music.load("darkside.mp3")
+        pygame.mixer.music.play()
+
     write("♪ ♫ ♬", 12.84)
     write("Sinking under", 2.67)
     write("Think my angel's fallen", 2.93)
@@ -68,7 +83,8 @@ def main():
     blink("Can't trust myself tonight", duracao=6.64, intervalo=0.5)
     write("Can't trust myself", 1.6)
     write("Can you talk me off the ledge again?", 5.0)
-    pygame.mixer.music.stop()
+    if args.music == "on":
+        pygame.mixer.music.stop()
 
 
 
