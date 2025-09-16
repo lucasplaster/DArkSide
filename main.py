@@ -1,6 +1,6 @@
 from py_typewriter import write, blink, fade_text, scroll_text, loading, color_text
 import time
-
+import pygame
 
 """
 
@@ -9,9 +9,11 @@ Basta apenas extrair a pasta no mesmo diretorio desse arquivo.
 
 """
 
-
-
 def main():
+
+    pygame.mixer.init()
+    pygame.mixer.music.load("darkside.mp3")
+    pygame.mixer.music.play()
     write("♪ ♫ ♬", 12.84)
     write("Sinking under", 2.67)
     write("Think my angel's fallen", 2.93)
@@ -65,7 +67,8 @@ def main():
     write("Can you talk me off the ledge again?", 3.1)
     blink("Can't trust myself tonight", duracao=6.64, intervalo=0.5)
     write("Can't trust myself", 1.6)
-    write("Can you talk me off the ledge again?", 4)
+    write("Can you talk me off the ledge again?", 5.0)
+    pygame.mixer.music.stop()
 
 
 
