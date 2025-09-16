@@ -5,7 +5,7 @@ import argparse
 """
 
 Você vai precisar do pygame instalado para rodar com musica, caso não queira
-musica é so usar -music off, caso queira com musica -music on. O padrão é sem musica.
+musica é so usar --music off, caso queira com musica --music on. O padrão é sem musica.
 É nescessario o modulo : https://github.com/lucasplaster/py-typewriter
 Basta apenas extrair a pasta no mesmo diretorio desse arquivo.
 
